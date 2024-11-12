@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./pages/Header"; // Importe o componente Header
+import Posts from "./pages/Posts";
+import CreatePost from "./pages/CreatePost";
+import Login from "./pages/Login";
+import Comments from "./pages/Comments";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />  {/* Incluindo o Header globalmente */}
+      <div className="content">
+        <Routes>
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/create-post" element={<CreatePost />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/comments/:postId" element={<Comments />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

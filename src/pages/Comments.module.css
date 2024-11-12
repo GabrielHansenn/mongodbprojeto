@@ -1,0 +1,68 @@
+
+
+.commentContainer {
+  background-color: #f4f7f6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.commentHeader {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.commentText {
+  color: #666;
+  font-size: 1rem;
+}
+
+.commentButton {
+  background-color: #56B0A8;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.commentButton:hover {
+  background-color: #2B4141;
+}
+
+.formContainer {
+  margin-top: 20px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.textareaField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.likeButton {
+  background-color: #8AB9B5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.likeButton:hover {
+  background-color: #2B4141;
+}
